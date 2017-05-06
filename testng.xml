@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<parameter name="driverName" value="AndroidDriver" />   <!--driver驱动：安卓，IOS -->
+	<parameter name="nodeURL" value="127.0.0.1:4723" /> <!--appium-server 地址 -->
+	<parameter name="appName" value="WeChat_980.apk" />  <!--app包名字 -->
+	<parameter name="platformName" value="Android" /> <!--app运行平台:安卓，IOS -->
+	<parameter name="deviceName" value="55dd55cb" /> <!--手机或者虚拟机设备名字 -->
+	<parameter name="sdkVersion" value="6.0" /><!--安卓,IOS SDK版本 -->
+	<parameter name="appMainPackage" value="com.letv.whatslive" /><!--app主包名 -->
+	<parameter name="appActivity" value="com.lxsj.whatslive.activity.MainActivity" /> <!--app 主类名 -->
+	<parameter name="UserName" value="" /> <!-- 系统登录用户名 -->
+	<parameter name="PassWord" value="" />  <!-- 系统登录密码 -->
+	<parameter name="smtpUserName" value="" />  <!-- 测试报告邮件发送：smtp身份证验证 -->
+	<parameter name="smtpPassWord" value="" />  <!-- 测试报告邮件发送：smtp身份证验证 -->
+	<parameter name="smtpHost" value="" />  <!-- 测试报告邮件发送：smtp主机地址 -->
+	<parameter name="smtpPort" value="" />  <!-- 测试报告邮件发送：smtp主机端口 -->
+	<parameter name="mailTitle" value="Whatslive中文版-自动化测试报告" />  <!-- 测试报告邮件发送：邮件标题 -->
+	<parameter name="logUrl" value="" />  <!-- 测试报告邮件发送：用例运行日志url -->
+	<parameter name="reportUrl" value="" />  <!-- 测试报告邮件发送：完整测试报告url -->
+	<parameter name="recipients" value="" /> <!-- 测试报告邮件发送：收件人，多个用,号隔开 -->
+	<parameter name="reportTitle" value="Whatslive中文版-自动化测试报告" />  <!--测试报告标题 -->
+
+	<test name="whatslive test">
+		<classes>
+			<class name="HomePageTest" />
+			<!-- <class name="testcase.VideoCaptureTest" /> -->
+			<!-- <class name="testcase.LiveCaptureTest" /> -->
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
